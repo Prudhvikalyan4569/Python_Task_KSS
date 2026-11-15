@@ -1,0 +1,6 @@
+Enter student name: Rahul
+
+Attendance Recorded Successfully!
+
+Student Attendance Records:
+Rahul

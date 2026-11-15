@@ -1,0 +1,4 @@
+Daily Notes:
+Today I learned Python.
+I practiced file handling.
+I completed my assignments.
