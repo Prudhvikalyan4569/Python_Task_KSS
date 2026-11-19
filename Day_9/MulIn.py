@@ -1,0 +1,28 @@
+# . Smart Home Devices (Multiple Inheritance)
+A smart home device may have both WiFi connectivity and Voice control features.
+Create classes WiFiDevice and VoiceAssistant, and a class SmartSpeaker that
+inherits from both using multiple inheritance.
+
+
+
+class WiFiDevice:
+    def wifi_connect(self):
+        print("Device is connected to WiFi")
+
+
+class VoiceAssistant:
+    def voice_control(self):
+        print("Voice control is activated")
+
+
+class SmartSpeaker(WiFiDevice, VoiceAssistant):
+    def display(self):
+        print("Smart Speaker is ready to use")
+
+
+# Creating an object
+speaker = SmartSpeaker()
+
+speaker.display()
+speaker.wifi_connect()
+speaker.voice_control()

@@ -1,0 +1,22 @@
+# Infinite Even Number Generator (Generators)
+Create a generator function that continuously generates even numbers starting from
+2. The program should print the first N even numbers using this generator.
+
+
+def even_numbers():
+    num = 2
+    while True:
+        yield num
+        num += 2
+
+
+# Main program
+N = int(input("Enter how many even numbers: "))
+
+gen = even_numbers()
+
+print("First", N, "Even Numbers:")
+
+for i in range(N):
+    print(next(gen))
+

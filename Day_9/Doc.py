@@ -1,0 +1,25 @@
+# Secure Login System (Decorators)
+A web application wants to ensure that users are authenticated before accessing
+sensitive functions. Create a decorator that checks whether the user is logged in before
+allowing access to a function.
+
+
+def login_required(func):
+    def wrapper(is_logged_in):
+        if is_logged_in:
+            return func(is_logged_in)
+        else:
+            print("Access Denied! Please login first.")
+    return wrapper
+
+
+@login_required
+def sensitive_function(is_logged_in):
+    print("Welcome! You can access the secure page.")
+
+
+# Function calls
+sensitive_function(True)   # Logged in
+sensitive_function(False)  # Not logged in
+
+
